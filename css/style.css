@@ -84,6 +84,14 @@ video {
   vertical-align: baseline;
   -webkit-text-size-adjust: 100%;
 }
+.after {
+  content: ".";
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  font-size: 0;
+}
 header {
   width: 100%;
   padding: 30px 0;
@@ -94,6 +102,9 @@ header h1 {
   text-align: center;
   line-height: 1.2em;
 }
+#contentsWrap section {
+  padding: 100px 0 150px;
+}
 #contentsWrap section h2 {
   font-size: 26px;
   text-align: center;
@@ -101,10 +112,19 @@ header h1 {
 #contentsWrap section ul {
   width: 100%;
   max-width: 980px;
-  margin: 0 auto;
+  margin: 30px auto 0;
   list-style: none;
 }
+#contentsWrap section ul:after {
+  content: ".";
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  font-size: 0;
+}
 #contentsWrap section ul li {
+  float: left;
   width: 23.5%;
   height: 220px;
   margin: 0 2% 2% 0;
@@ -132,6 +152,16 @@ header h1 {
   left: 10px;
   bottom: 15px;
   font-size: 14px;
+}
+#contentsWrap .box01 {
+  padding: 100px 0 0;
+}
+#contentsWrap .box01 p {
+  max-width: 870px;
+  color: #333;
+  text-align: center;
+  margin: 30px auto 0;
+  letter-spacing: -0.03em;
 }
 footer {
   width: 100%;

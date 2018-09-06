@@ -23,6 +23,14 @@ time, mark, audio, video {
 	vertical-align: baseline;
 	-webkit-text-size-adjust: 100%;
 }
+.after{
+	content: ".";
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+	font-size: 0;
+}
 
 header {
 	width: 100%;
@@ -37,6 +45,7 @@ header {
 
 #contentsWrap {
 	section {
+		padding: 100px 0 150px;
 		h2 {
 			font-size: 26px;
 			text-align: center;
@@ -44,9 +53,13 @@ header {
 		ul {
 			width: 100%;
 			max-width: 980px;
-			margin: 0 auto;
+			margin: 30px auto 0;
 			list-style: none;
+			&:after {
+				.after;
+			}
 			li {
+				float: left;
 				width: 23.5%;
 				height: 220px;
 				margin: 0 2% 2% 0;
@@ -75,6 +88,16 @@ header {
 					}
 				}
 			}
+		}
+	}
+	.box01 {
+		padding: 100px 0 0;
+		p {
+			max-width: 870px;
+			color: #333;
+			text-align: center;
+			margin: 30px auto 0;
+			letter-spacing: -0.03em;
 		}
 	}
 }
